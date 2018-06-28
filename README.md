@@ -2,6 +2,8 @@
 ------------
 A "getting started" Dropwizard project in Kotlin with a Gradle build
 
+To keep things concise, all code is in a single [Kotlin file](https://github.com/sorokod/Dropwizard-with-Gradle-and-Kotlin/blob/master/src/main/kotlin/KHelloWorld.kt).
+
 To build and run:
 
 ```
