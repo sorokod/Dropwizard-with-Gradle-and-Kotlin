@@ -2,13 +2,17 @@
 ------------
 A "getting started" Dropwizard project in Kotlin with a Gradle build
 
-To keep things concise, all code is in a single [Kotlin file](https://github.com/sorokod/Dropwizard-with-Gradle-and-Kotlin/blob/master/src/main/kotlin/KHelloWorld.kt).
+To keep things compact, the application code is in a single [Kotlin file](https://github.com/sorokod/Dropwizard-with-Gradle-and-Kotlin/blob/master/src/main/kotlin/KHelloWorld.kt),
+with a health check defined in `HWHealthCheck`
 
-To build and run:
+
+To build, test and run:
 
 ```
-./gradlew  build shadowJar && ./gradlew run
+gradle test
+gradle build shadowJar  &&  gradle run
 ```
+
 The app can also be run with:
  `java -jar build/libs/hello-dropwizard.jar server config.yml`
 

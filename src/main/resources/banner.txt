@@ -1,0 +1,18 @@
+
+DDDDDDDDDDDDD                                              ZZZZZZZZZZZZZZZZZZZ                     KKKKKKKKK    KKKKKKK                        tttt         lllllll  iiii
+D::::::::::::DDD                                           Z:::::::::::::::::Z                     K:::::::K    K:::::K                     ttt:::t         l:::::l i::::i
+D:::::::::::::::DD                                         Z:::::::::::::::::Z                     K:::::::K    K:::::K                     t:::::t         l:::::l  iiii
+DDD:::::DDDDD:::::D                                        Z:::ZZZZZZZZ:::::Z        +++++++       K:::::::K   K::::::K                     t:::::t         l:::::l
+  D:::::D    D:::::wwwwwww           wwwww           wwwwwwZZZZZ     Z:::::Z         +:::::+       KK::::::K  K:::::KKK  ooooooooooo  ttttttt:::::ttttttt    l::::liiiiiinnnn  nnnnnnnn
+  D:::::D     D:::::w:::::w         w:::::w         w:::::w        Z:::::Z           +:::::+         K:::::K K:::::K   oo:::::::::::oot:::::::::::::::::t    l::::li:::::n:::nn::::::::nn
+  D:::::D     D:::::Dw:::::w       w:::::::w       w:::::w        Z:::::Z      +++++++:::::+++++++   K::::::K:::::K   o:::::::::::::::t:::::::::::::::::t    l::::l i::::n::::::::::::::nn
+  D:::::D     D:::::D w:::::w     w:::::::::w     w:::::w        Z:::::Z       +:::::::::::::::::+   K:::::::::::K    o:::::ooooo:::::tttttt:::::::tttttt    l::::l i::::nn:::::::::::::::n
+  D:::::D     D:::::D  w:::::w   w:::::w:::::w   w:::::w        Z:::::Z        +:::::::::::::::::+   K:::::::::::K    o::::o     o::::o     t:::::t          l::::l i::::i n:::::nnnn:::::n
+  D:::::D     D:::::D   w:::::w w:::::w w:::::w w:::::w        Z:::::Z         +++++++:::::+++++++   K::::::K:::::K   o::::o     o::::o     t:::::t          l::::l i::::i n::::n    n::::n
+  D:::::D     D:::::D    w:::::w:::::w   w:::::w:::::w        Z:::::Z                +:::::+         K:::::K K:::::K  o::::o     o::::o     t:::::t          l::::l i::::i n::::n    n::::n
+  D:::::D    D:::::D      w:::::::::w     w:::::::::w      ZZZ:::::Z     ZZZZZ       +:::::+       KK::::::K  K:::::KKo::::o     o::::o     t:::::t    ttttttl::::l i::::i n::::n    n::::n
+DDD:::::DDDDD:::::D        w:::::::w       w:::::::w       Z::::::ZZZZZZZZ:::Z       +++++++       K:::::::K   K::::::o:::::ooooo:::::o     t::::::tttt:::::l::::::i::::::in::::n    n::::n
+D:::::::::::::::DD          w:::::w         w:::::w        Z:::::::::::::::::Z                     K:::::::K    K:::::o:::::::::::::::o     tt::::::::::::::l::::::i::::::in::::n    n::::n
+D::::::::::::DDD             w:::w           w:::w         Z:::::::::::::::::Z                     K:::::::K    K:::::Koo:::::::::::oo        tt:::::::::::tl::::::i::::::in::::n    n::::n
+DDDDDDDDDDDDD                 www             www          ZZZZZZZZZZZZZZZZZZZ                     KKKKKKKKK    KKKKKKK  ooooooooooo            ttttttttttt llllllliiiiiiiinnnnnn    nnnnnn
+

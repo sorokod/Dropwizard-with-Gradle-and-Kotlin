@@ -1,12 +1,10 @@
 import com.codahale.metrics.annotation.Timed
-import com.codahale.metrics.health.HealthCheck
-import com.codahale.metrics.health.HealthCheck.Result.healthy
-import com.codahale.metrics.health.HealthCheck.Result.unhealthy
 import com.fasterxml.jackson.annotation.JsonProperty
 import io.dropwizard.Application
 import io.dropwizard.Configuration
 import io.dropwizard.setup.Environment
 import org.hibernate.validator.constraints.Length
+import org.hibernate.validator.constraints.NotEmpty
 import java.util.*
 import java.util.concurrent.atomic.AtomicLong
 import javax.validation.Valid
@@ -14,24 +12,26 @@ import javax.ws.rs.*
 import javax.ws.rs.core.MediaType.APPLICATION_JSON
 
 class HWConfiguration(
-        @JsonProperty val template: String,
-        @JsonProperty val defaultName: String = "Stranger") : Configuration() {
+        @JsonProperty @NotEmpty val template: String="",
+        @JsonProperty @NotEmpty val defaultName: String = "Stranger") : Configuration() {
 
-    constructor() : this("", "")
+    constructor() : this("", "") // needed by Jackson deserialization
 }
 
 
 class HWSaying(
-        @JsonProperty val id: Long,
-        @JsonProperty @field:Length(max = 3) val content: String) {
+        @JsonProperty val id: Long = 0,
+        @JsonProperty @field:Length(max = 3) val content: String = "") {
 
-    constructor() : this(0, "")
+    constructor() : this(0, "") // needed by Jackson deserialization
 }
 
 
 @Path("/hello-world")
 @Produces(APPLICATION_JSON)
-class HWResource(val template: String, val defaultName: String) {
+class HWResource(
+        private val template: String,
+        private val defaultName: String) {
 
     private val counter = AtomicLong()
 
@@ -48,19 +48,6 @@ class HWResource(val template: String, val defaultName: String) {
 }
 
 
-class HWHealthCheck(val template: String) : HealthCheck() {
-
-    override fun check(): Result {
-        val saying = String.format(template, "TEST")
-
-        return if (!saying.contains("TEST")) {
-            unhealthy("template doesn't include a name")
-        } else {
-            healthy()
-        }
-    }
-
-}
 
 class HWApplication : Application<HWConfiguration>() {
 
@@ -71,7 +58,7 @@ class HWApplication : Application<HWConfiguration>() {
         val healthCheck = HWHealthCheck(conf.template)
 
         env.jersey().register(hwResource)
-        env.healthChecks().register("template", healthCheck)
+        env.healthChecks().register("hcTemplate", healthCheck)
     }
 
 }
